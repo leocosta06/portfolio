@@ -356,8 +356,8 @@ h1 .blue{color:var(--accent)}
 #projects{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .proj-grid{
   display:grid;
-  grid-template-columns:repeat(12,1fr);
-  gap:1.2rem;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
   margin-top:3.5rem;
 }
 .proj-card{
@@ -601,4 +601,17 @@ footer{
   footer{flex-direction:column;gap:.7rem;text-align:center}
   .stats-row{flex-wrap:wrap}
   .stat{min-width:50%;border-right:none;border-bottom:1px solid var(--border)}
+  .proj-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em tablets */
+  }
 }
+@media (max-width: 600px) {
+  .proj-grid {
+    grid-template-columns: 1fr; /* 1 por linha no celular */
+  }
+}@media (max-width: 600px) {
+  .proj-grid {
+    grid-template-columns: 1fr; /* 1 por linha no celular */
+  }
+}
+
